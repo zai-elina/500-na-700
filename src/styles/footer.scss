@@ -1,0 +1,28 @@
+.footer {
+  height: 252px;
+  width: 100vw;
+  display: flex;
+  column-gap: 119px;
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
+}
+.footer__icons {
+  display: flex;
+  margin-top: 54px;
+  gap: 30px;
+}
+.footer__text {
+  width: 400px;
+  margin-top: 50px;
+}
+.footer__desc {
+  margin-top: 10px;
+}
+.footer__link {
+  margin-top: 25px;
+  color: $white;
+}
+.footer__link a {
+  color: $white;
+  text-decoration: underline;
+}

@@ -7,4 +7,41 @@
   text-transform: uppercase;
 }
 .faq__content {
+  border-top: 1px solid $white;
+  width: 988px;
+  height: 363px;
+}
+
+.accordion {
+  background-color: $black;
+  cursor: pointer;
+  padding: 30px 0;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: $white;
+  border: none;
+  border-bottom: 1px solid #ffffff33;
+}
+
+.active-accordion {
+  border: none;
+}
+
+.accordion:hover {
+  background-color: #ffffff33;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff33;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
 }

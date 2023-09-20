@@ -1,34 +1,25 @@
 import "../styles/main.scss";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { accordionOpen } from "./accordion";
+import { openDropDown } from "./navbar";
+import { createSlider } from "./slider";
+import Inputmask from "inputmask";
+import { validateForm } from "./validateForm";
 
-const dropdownButton = document.querySelector(".dropdown");
-const dropdownContent = document.querySelector(".dropdown__content");
+openDropDown();
 
-dropdownButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  dropdownButton.classList.toggle("active");
-  dropdownContent.classList.toggle("show");
-  document.querySelector(".overlay").classList.toggle("show-overlay");
-});
+createSlider();
 
-Swiper.use([Navigation, Pagination]);
+accordionOpen();
 
-const swiper = new Swiper(".swiper", {
-  loop: true,
+const phoneInput = document.getElementById("phone-input");
+Inputmask().mask(phoneInput);
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+const form = document.querySelector(".form");
 
-  speed: 500,
-
-  slidesPerView: 1.5,
-
-  spaceBetween: 20,
-
-  centeredSlides: true,
-
-  freeMode: true,
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (validateForm()) {
+    alert("Форма отправлена!");
+    form.reset();
+  }
 });
