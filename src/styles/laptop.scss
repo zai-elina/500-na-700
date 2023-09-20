@@ -1,0 +1,23 @@
+@media (max-width: 1300px) {
+  .header__logo {
+    padding-left: 40px;
+  }
+  section,
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1173px) {
+  .form__inputs {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .form__inputs {
+    justify-content: center;
+  }
+  .form {
+    text-align: center;
+  }
+}
