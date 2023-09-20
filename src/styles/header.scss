@@ -91,6 +91,7 @@
   background-color: $black;
   width: 250px;
   transition: all 0.7s;
+  z-index: 25;
 }
 .active-mobile {
   right: 0;

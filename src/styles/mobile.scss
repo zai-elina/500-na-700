@@ -1,6 +1,7 @@
 @media (max-width: 705px) {
   .header {
     justify-content: space-between;
+    padding-top: 35px;
   }
   .header__logo {
     padding: 0;
@@ -48,5 +49,8 @@
   }
   .subscribe__text {
     width: 275px;
+  }
+  .slider {
+    margin-top: 100px;
   }
 }
