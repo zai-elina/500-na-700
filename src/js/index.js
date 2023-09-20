@@ -1,11 +1,22 @@
 import "../styles/main.scss";
 import { accordionOpen } from "./accordion";
-import { openDropDown } from "./navbar";
+import {
+  closeNavMobile,
+  openDropDown,
+  openDropDownMobile,
+  openNavMobile,
+} from "./navbar";
 import { createSlider } from "./slider";
 import Inputmask from "inputmask";
 import { validateForm } from "./validateForm";
 
 openDropDown();
+
+openNavMobile();
+
+closeNavMobile();
+
+openDropDownMobile();
 
 createSlider();
 
