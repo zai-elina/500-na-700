@@ -1,0 +1,36 @@
+.news {
+  margin-top: 100px;
+}
+
+.news__wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 20px;
+  justify-content: center;
+}
+
+.news__item {
+  width: 395px;
+  transition: all 0.7s;
+}
+
+.news__item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.news-item__title {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.news-item__text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+}

@@ -12,14 +12,33 @@ $green: #75ff72;
 
 body {
   font-family: "M PLUS 1p", sans-serif;
-  padding-left: calc(50% - 620px);
-  padding-right: calc(50% - 620px);
   background-color: $black;
+  color: $white;
 }
 
 a {
   text-decoration: none;
 }
 
+.overlay {
+  position: fixed;
+  background: rgba(183, 183, 183, 0.8);
+  disaply: none;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 85px;
+  letter-spacing: -0.03em;
+}
+
+section {
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
+}
+
 @import "header";
 @import "slider";
+@import "faq";
+@import "news"

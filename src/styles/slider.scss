@@ -1,4 +1,31 @@
-.swiper {
-  width: 600px;
-  height: 300px;
+@import "../../node_modules/swiper/swiper-bundle.css";
+.slider {
+  margin-top: 212px;
+}
+.slider__image {
+  height: 650px;
+  width: 100%;
+}
+.swiper-slide {
+  text-align: center;
+}
+
+.slider__navigation {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: block;
+  position: static;
+  width: 100px;
+}
+
+.swiper-button-next:hover path,
+.swiper-button-prev:hover path {
+  fill: $green;
 }

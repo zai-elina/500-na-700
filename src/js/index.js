@@ -1,33 +1,34 @@
 import "../styles/main.scss";
 import Swiper from "swiper";
-import "swiper/css";
+import { Navigation, Pagination } from "swiper/modules";
 
 const dropdownButton = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown__content");
 
-dropdownButton.addEventListener("click", () => {
+dropdownButton.addEventListener("click", (event) => {
+  event.preventDefault();
   dropdownButton.classList.toggle("active");
   dropdownContent.classList.toggle("show");
+  document.querySelector(".overlay").classList.toggle("show-overlay");
 });
 
+Swiper.use([Navigation, Pagination]);
+
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "vertical",
   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  speed: 500,
+
+  slidesPerView: 1.5,
+
+  spaceBetween: 20,
+
+  centeredSlides: true,
+
+  freeMode: true,
 });
