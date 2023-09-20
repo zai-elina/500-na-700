@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap");
+
+$white: #ffffff;
+$black: #0b0a0d;
+$green: #75ff72;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
+  background-color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "header";
+@import "slider";
